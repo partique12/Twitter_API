@@ -63,7 +63,6 @@ public class APITests {
         String AccessTokenSecret = "test_invalid_token";
 
         RestAssured.baseURI="https://api.twitter.com/";
-
         Response res = given().
                 auth().
                 oauth(ConsumerKey, ConsumerSecretKey, AccessToken, AccessTokenSecret).
